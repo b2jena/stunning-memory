@@ -1,6 +1,6 @@
 <div id = "Issue">
   <div class="container">
-      <form [formGroup]="form" (ngSubmit)=" onSubmit()">
+      <form [formGroup]="form" (ngSubmit)=" onSubmit(form)">
       <div class="row">
         <div class="col-25">
           <label>Issue Title</label>
@@ -26,7 +26,7 @@
 
          <!-- write logic to display message if form is submitted-->
       <div class="alert" >
-      
+        <strong>{{message}}</strong>
       </div>
   </div>
 </div>
